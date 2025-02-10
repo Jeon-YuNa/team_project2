@@ -1,5 +1,5 @@
 #filter {
-  position: fixed;
+  position: absolute;
   top: 135px;
   left: 50%;
   transform: translateX(-50%);
