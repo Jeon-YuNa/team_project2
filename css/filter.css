@@ -1,0 +1,32 @@
+#filter {
+  position: fixed;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  display: none;
+  z-index: 99;
+}
+#filter h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+#filter ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+#filter ul li {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #666;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#filter ul li input {
+  width: 15px;
+  height: 15px;
+}

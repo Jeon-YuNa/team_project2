@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+li {
+  list-style: none;
+}
+#header .wrap,
+#search,
+#travel,
+#filter,
+#airplaneInfoContainer {
+  width: 100%;
+  max-width: 768px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+#search > div {
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 20px;
+}

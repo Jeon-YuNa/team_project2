@@ -1,0 +1,71 @@
+#airplaneWrap {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+#airplaneInfoContainer {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+}
+.ticketWrap {
+  height: 100%;
+}
+.ticketLayout {
+  padding: 0 40px;
+}
+.ticketBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0 30px;
+  border-bottom: 1px solid #aaa;
+}
+
+.ticketBoxLeft > figure {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.ticketBoxLeft > figure > img {
+  width: 30px;
+  height: 30px;
+}
+
+.ticketBoxLeft > figure > figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ticketBoxLeft > figure > figcaption > .ticketTime {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ticketBoxLeft > figure > figcaption > .ticketCompany {
+  font-size: 12px;
+}
+
+.ticketBoxRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.ticketBoxRight > .ticketFlyingTime {
+  font-size: 14px;
+}
+
+.ticketBoxRight > .ticketPrice {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.ticketBoxRight > .ticketPriceAdd {
+  font-size: 12px;
+}

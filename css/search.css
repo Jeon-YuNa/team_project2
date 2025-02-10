@@ -1,0 +1,120 @@
+.search-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.search-wrap {
+  background-color: #f2f2f2;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+#search {
+  padding: 30px 40px;
+}
+#search .close {
+  width: 100%;
+  border: 0;
+}
+#search .close i {
+  cursor: pointer;
+}
+#search .oneWay {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  font-size: 14px;
+}
+#search .oneWay span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #4a84ff;
+  color: #4a84ff;
+  font-weight: 700;
+}
+#search .airplane {
+  display: flex;
+  padding: 20px;
+}
+#search .airplane > div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+#search .airplane > div strong {
+  font-size: 30px;
+}
+#search .airplane > div span {
+  font-size: 12px;
+  color: #aaa;
+}
+#search .date {
+  display: flex;
+  justify-content: center;
+}
+#search .date input {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+}
+#search .people {
+  display: flex;
+  padding: 20px;
+  font-weight: 500;
+}
+#search .people > div {
+  width: 50%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#search .people > div:first-child {
+  border-right: 1px solid #f2f2f2;
+}
+#search .people .count {
+  display: flex;
+}
+#search .people .count strong {
+  font-size: 20px;
+  margin-right: 10px;
+}
+#search .people .count span {
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#search .people .count span:hover {
+  background-color: #f3f3f3;
+}
+#search .people .count span i {
+  font-size: 14px;
+}
+button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(210, 13, 90);
+  border: 0;
+  padding: 10px 200px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}

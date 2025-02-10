@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://cdn.yanoljagroup.com/data/news/2024/04/29/247f878b-e2c0-4274-a4d3-a0fd175b59a4.jpg"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/travel.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/filter.css" />
+    <link rel="stylesheet" href="css/airplaneList.css" />
+    <script type="module" src="js/data.js" defer></script>
+    <script type="module" src="js/search.js" defer></script>
+    <script type="module" src="js/submit.js" defer></script>
+    <script type="module" src="js/filter.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrap">
+        <div class="info"></div>
+        <div class="filter-wrap">
+          <div class="filter-btn">필터</div>
+        </div>
+      </div>
+    </header>
+    <div class="search-background">
+      <div class="search-wrap">
+        <div id="search">
+          <!-- <div class="close"><i class="fa-solid fa-x"></i></div> -->
+          <div class="oneWay"><span>편도</span></div>
+          <div class="airplane">
+            <div class="depart">
+              <strong>ICN</strong>
+              <span>인천</span>
+            </div>
+            <div class="arrive">
+              <strong id="arriveEn">OSA</strong>
+              <span id="arriveKo">오사카</span>
+            </div>
+          </div>
+          <div class="date">
+            <input
+              type="date"
+              id="dateInput"
+              name="trip-start"
+              value="2025-03-01"
+              min="2025-01-01"
+              max="2025-06-30"
+            />
+          </div>
+          <div class="people">
+            <div>
+              성인
+              <div class="count">
+                <strong id="adultNum">1</strong>
+                <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+              </div>
+            </div>
+            <div>
+              소아
+              <div class="count">
+                <strong id="childNum">0</strong>
+                <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+              </div>
+            </div>
+          </div>
+          <button id="submit">검색하기</button>
+        </div>
+        <div id="travel">
+          <h2>도착지</h2>
+          <h3>일본</h3>
+          <ul id="travelList"></ul>
+        </div>
+      </div>
+    </div>
+    <div id="filter">
+      <h2>항공사</h2>
+      <ul>
+        <li>진에어<input type="checkbox" value="진에어" /></li>
+        <li>대한항공<input type="checkbox" value="대한항공" id="" /></li>
+        <li>
+          아시아나항공<input type="checkbox" value="아시아나항공" id="" />
+        </li>
+        <li>티웨이항공<input type="checkbox" value="티웨이항공" id="" /></li>
+        <li>에어서울<input type="checkbox" value="에어서울" id="" /></li>
+        <li>제주항공<input type="checkbox" value="제주항공" id="" /></li>
+        <li>이스타항공<input type="checkbox" value="이스타항공" id="" /></li>
+      </ul>
+      <button>적용하기</button>
+    </div>
+    <div id="airplaneWrap">
+      <div id="airplaneInfoContainer"></div>
+    </div>
+    <div id="cardList">
+      <div class="priceTitle">
+        <div class="close">
+          <i class="fa-solid fa-x"></i>
+          <strong>요금 선택</strong>
+        </div>
+      </div>
+      <div id="cardListContainer"></div>
+      <div class="clickButton">
+        <button>선택하기</button>
+      </div>
+    </div>
+  </body>
+</html>
